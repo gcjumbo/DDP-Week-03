@@ -11,10 +11,6 @@ setwd("~/Documents/Grinnell College/04_Spring 2017/MAT-397 (Adv Data Sci)/Course
 prison <- read.csv("prison_clean.csv")
 ```
 
-## Disclaimer
-
-I had a lot of trouble getting the `plotly` package to work on my version of RStudio due to some computer issues, **so I decided to embed a visualization using `googleVis` instead**.  Please take note of this.
-
 
 ## Background
 
@@ -30,7 +26,14 @@ The data are openly available through the government: https://data.iowa.gov/Publ
 We use a previously cleaned version of the data to demonstrate basic data visualization.  Summaries for data input were calculated beforehand.
 
 
-## Interactive Data Visualization
+## Interactive Data Visualization: Plotly
+
+```{r, warnings = FALSE, message = FALSE, warning = FALSE}
+plotly::plot_ly(x = c("Criminals Return to Jail", "Criminals Stay Out of Jail"), y = c(5128, 11370), name = "Count of Prisoner Recidivism", type = "bar")
+```
+
+
+## Interactive Data Visualization: Google Vis
 
 ```{r setOptions, message = FALSE}
 suppressPackageStartupMessages(library(googleVis))
