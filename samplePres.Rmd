@@ -11,6 +11,11 @@ setwd("~/Documents/Grinnell College/04_Spring 2017/MAT-397 (Adv Data Sci)/Course
 prison <- read.csv("prison_clean.csv")
 ```
 
+## Disclaimer
+
+I had a lot of trouble getting the `plotly` package to work on my version of RStudio due to some computer issues, **so I decided to embed a visualization using `googleVis` instead**.  Please take note of this.
+
+
 ## Background
 
 Recidivism occurs when a prisoner is released from jail, relapses back into criminal behavior, and is rearrested.

@@ -97,7 +97,11 @@
           </hgroup>
   </slide>
 
-<slide class=''><hgroup><h2>Background</h2></hgroup><article  id="background">
+<slide class=''><hgroup><h2>Disclaimer</h2></hgroup><article  id="disclaimer">
+
+<p>I had a lot of trouble getting the <code>plotly</code> package to work on my version of RStudio due to some computer issues, <strong>so I decided to embed a visualization using <code>googleVis</code> instead</strong>. Please take note of this.</p>
+
+</article></slide><slide class=''><hgroup><h2>Background</h2></hgroup><article  id="background">
 
 <p>Recidivism occurs when a prisoner is released from jail, relapses back into criminal behavior, and is rearrested.</p>
 
@@ -115,14 +119,14 @@
 
 <!-- BarChart generated in R 3.2.3 by googleVis 0.6.2 package -->
 
-<!-- Mon May  1 10:53:26 2017 -->
+<!-- Mon May  1 11:13:39 2017 -->
 
 <!-- jsHeader -->
 
 <script type="text/javascript">
  
 // jsData 
-function gvisDataBarChartID76e4184b727f () {
+function gvisDataBarChartID7776324b31e9 () {
 var data = new google.visualization.DataTable();
 var datajson =
 [
@@ -142,13 +146,13 @@ return(data);
 }
  
 // jsDrawChart
-function drawChartBarChartID76e4184b727f() {
-var data = gvisDataBarChartID76e4184b727f();
+function drawChartBarChartID7776324b31e9() {
+var data = gvisDataBarChartID7776324b31e9();
 var options = {};
 options["allowHtml"] = true;
 
     var chart = new google.visualization.BarChart(
-    document.getElementById('BarChartID76e4184b727f')
+    document.getElementById('BarChartID7776324b31e9')
     );
     chart.draw(data,options);
     
@@ -172,9 +176,9 @@ if (newPackage)
   pkgs.push(chartid);
   
 // Add the drawChart function to the global list of callbacks
-callbacks.push(drawChartBarChartID76e4184b727f);
+callbacks.push(drawChartBarChartID7776324b31e9);
 })();
-function displayChartBarChartID76e4184b727f() {
+function displayChartBarChartID7776324b31e9() {
   var pkgs = window.__gvisPackages = window.__gvisPackages || [];
   var callbacks = window.__gvisCallbacks = window.__gvisCallbacks || [];
   window.clearTimeout(window.__gvisLoad);
@@ -199,11 +203,11 @@ callbacks.shift()();
 
 <!-- jsChart -->
 
-<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID76e4184b727f"></script>
+<script type="text/javascript" src="https://www.google.com/jsapi?callback=displayChartBarChartID7776324b31e9"></script>
 
 <!-- divChart -->
 
-<div id="BarChartID76e4184b727f" style="width: 500; height: automatic;">
+<div id="BarChartID7776324b31e9" style="width: 500; height: automatic;">
 </div></article></slide>
 
 
