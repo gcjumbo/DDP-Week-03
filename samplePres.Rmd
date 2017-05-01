@@ -1,0 +1,40 @@
+---
+title: "Simple Presentation of Iowan Recidivism"
+author: "Jarren Santos"
+date: "4/30/2017"
+output: ioslides_presentation
+---
+
+```{r setup, include=FALSE}
+knitr::opts_chunk$set(echo = FALSE)
+setwd("~/Documents/Grinnell College/04_Spring 2017/MAT-397 (Adv Data Sci)/Coursera/08_Developing Data Products/DDP-Week-03/")
+prison <- read.csv("prison_clean.csv")
+```
+
+## Background
+
+Recidivism occurs when a prisoner is released from jail, relapses back into criminal behavior, and is rearrested.
+
+Understanding what prisoner traits are associated with rearrest after release (known as recidivism) is vital for the successful and effective implementation of assistance programs aimed at preventing recidivism.
+
+
+## Data Source
+
+The data are openly available through the government: https://data.iowa.gov/Public-Safety/3-Year-Recidivism-for-Offenders-Released-from-Pris/mw8r-vqy4
+
+We use a previously cleaned version of the data to demonstrate basic data visualization.  Summaries for data input were calculated beforehand.
+
+
+## Interactive Data Visualization
+
+```{r setOptions, message = FALSE}
+suppressPackageStartupMessages(library(googleVis))
+op <- options(gvis.plot.tag='chart')
+```
+
+```{r gv, results = "asis", tidy = FALSE, warning = FALSE}
+prison1 <- data.frame(c("Criminals Return to Jail", "Criminals Stay Out of Jail"), c(5128, 11370))
+M <- gvisBarChart(prison1)
+plot(M)
+```
+
