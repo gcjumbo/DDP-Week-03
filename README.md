@@ -8,9 +8,8 @@ Please put your name here.
 
 
 ### Project Information
-**Simple Map of Grinnell College Academic Buildings**: I thought it would be neat and simple to create a map of Grinnell College's academic buildings and hyperlink them to their respective websites.  This is a map created using the `leaflet` package in R.
+**Simple Presentation of Iowan Recidivism**: In the fall semester of 2017, I worked on predicting recidivism rate in Iowa for prisoners incorporated into a special program.  Understanding what prisoner traits are associated with rearrest after release (known as recidivism) is vital for the successful and effective implementation of assistance programs aimed at preventing recidivism.  Now, I am interested in creating a simple visualization based on that data.
 
 
 ### Citations
-* The dataset used for this project was created by me.  I searched the latitudinal and longitudinal coordinates of each of the academic building and put them into a `.csv` file, which you can access in the repository.
-* The Grinnell College logo used to create the custom markers was obtained from the following website: https://upload.wikimedia.org/wikipedia/en/thumb/b/bc/Grinnell_College_seal.svg/1200px-Grinnell_College_seal.svg.png
+* The Iowan Recidivism dataset is available at https://data.iowa.gov/Public-Safety/3-Year-Recidivism-for-Offenders-Released-from-Pris/mw8r-vqy4
